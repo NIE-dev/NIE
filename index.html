@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>National Innovation Ecosystem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage" style="display: flex; font-weight: bolder;" >NIE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#contact1">CONTACT</a></li>
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">LOG IN/SIGN UP
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ADMIN LOG IN</a></li>
+            <li><a href="#">USER LOG IN/SIGN UP</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>National Innovation Ecosystem</h1> 
+  <p>For Inventors, When You Need Support</p>
+  <p style="font-style: italic;font-size: 15px;">From a bright idea...<br>To a profitable business</p> 
+  <form>
+  </form>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="instructions" class="container-fluid text-center bg-grey">
+  
+  <h2>Instructions for inventors</h2>
+  <div class="alert alert-success" style="display: flex;">
+    <strong>Step 1. </strong> Signup, describe your invention briefly
+      <button class="btn btn-default" id="description" type="submit" style="margin-left: 20px;">Describe Your Product Here</button>
+    
+  </div>
+  <div class="alert alert-success">
+    <strong>Step 2. </strong> Recieve an email with your assigned mentor
+  </div>
+  <div class="alert alert-success">
+    <strong>Step 3. </strong> Call your mentor and shedule an e-meeting and do the following<br>
+    <div style="margin-left: 50px;"><span>I. Fill the tech brief<span class="glyphicon glyphicon-arrow-right"></span><a href="">Download tech brief form</a><br>
+      II. Evaluate technology readlines level<br>
+      III. Make a brief development plan (Upload your completed tech brief)</span> 
+        <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+      </form>
+    </div>
+    
+  </div>
+  <div class="alert alert-success">
+    <strong>Step 4. </strong> Make use of services available online
+    <a href="#services" class="btn btn-primary" role="button">Go to services</a>
+  </div>
+  <div class="alert alert-success">
+    <strong>Step 5. </strong> If your business is successful, please consider remunerating the mentor in an appropriate manner(Offering shares, monetary benefit etc..)
+    <p style="margin-left: 50px;"><strong> How you remunerate mentor</strong> (Upload document)</p>
+    <form action="/action_page.php" style="margin-left: 50px;">
+      <input type="file" id="myFile" name="filename">
+      <input type="submit">
+    </form>
+  </div>
+  <div class="alert alert-success">
+    <strong>Step 6. </strong> Fill your online diary with major steps of your journey
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center" style="color: #f6f6f6;">Describe about your innovation here</h2>
+  <div class="row">
+    <div class="col-sm-12 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Support Type
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Business development</a></li>
+              <li><a href="#">Equipment & services</a></li>
+              <li><a href="#">Professional skills</a></li>
+              <li><a href="#">Industrial Property Support</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Legal support</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input id="phone" type="text" class="form-control" name="email" placeholder="Mobile">
+        </div>
+        <div class="col-sm-6 form-group">
+          <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+          
+        </div>
+      </div>
+      <textarea class="form-control" id="description" name="description" placeholder="Briefly describe about your innovation" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <button class="btn btn-default pull-right" id="submit" type="submit">Submit</button>
+        </div>
+        <div class="col-sm-4 form-group">
+          <button class="btn btn-default" id="cancel" type="submit">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About</h2><br>
+      <h4>The National Innovation Ecosystem (NIES) is an online platform where all kinds of support inventors need for the commercialization process are made available with ease of access.  NIES provides a mentor to each inventor, and brings services and resources to the inventor according to his/her needs, throughout the innovation journey. At NIES there’s always someone to get advice from, and resources accessible quite conveniently - a dream come true for inventors. NIES comprises seven support networks as mentoring, equipment/services, skills, IP management, investment, legal, and business development. 
+        The NIES has been developed by the NIA, NSF, LATTO, ICTA, SLIC, NIPO and ICTA</h4><br>
+      
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+  <h3 style="margin: 50px;">Developed by...</h3>
+  
+  <div class="row slideanim" style="padding-bottom: 10px;">
+    <div class="col-sm-4">
+      <a href="#demo4" data-toggle="collapse">
+        <img src="Assets\NSF.webp" width="100" height="75">
+      </a>
+      <div id="demo4" class="collapse">
+        <p><a href="http://www.nsf.ac.lk/" target="_blank"> National Science Foundation</a></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo5" data-toggle="collapse">
+        <img src="Assets\SLIC.jpg" width="100" height="75">
+      </a>
+      <div id="demo5" class="collapse">
+        <p><a href="http://slic.gov.lk/" target="_blank"> Sri Lanka Inventors Commission</a></p>
+        
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo6" data-toggle="collapse">
+        <img src="Assets/NIA.png"  width="100" height="75">
+      </a>
+      <div id="demo6" class="collapse">
+        <p><a href="https://www.nia.gov.lk/" target="_blank"> National Innovations Agency</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <a href="#demo" data-toggle="collapse">
+        <img src="D:\Curacell\Assets\ICTA.jpg" width="100" height="100">
+      </a>
+      <div id="demo" class="collapse">
+        <p><a href="https://www.icta.lk/" target="_blank"> Information & Communication Technology Agency</a></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo2" data-toggle="collapse">
+        <h1 style="padding-top: 15px; font-weight: bold; color: blue;">NIPO</h1>
+      </a>
+      <div id="demo2" class="collapse">
+        <p><a href="https://www.nipo.gov.lk/" target="_blank"> National Interlectual property Office</a></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo3" data-toggle="collapse">
+        <img src="D:\Curacell\Assets\latto.jpg" width="100" height="75">
+      </a>
+      <div id="demo3" class="collapse">
+        <p><a href="#" target="_blank"> Lanka Associaltion of Technology Transfer Office</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> This is our mission</h4><br>
+      <h4><strong>VISION:</strong> This is our vision</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>We will support you in</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>Equpment & Services</h4>
+    </div>
+
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Professional Skills</h4>
+    </div>
+
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo-small"></span>
+      <h4>Business Development Support</h4>
+    </div>
+    
+    
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ok-circle logo-small"></span>
+      <h4>Industrial Property Support</h4>
+      
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>Investors</h4>
+      
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-legal logo-small"></span>
+      <h4 style="color:#303030;">Legal Support</h4>
+      
+    </div>
+  </div>
+</div>
+<!------Contact details------->
+<!-- Container (Contact Section) -->
+<div id="contact1" class="container">
+  <h2 class="text-center">CONTACT</h2>
+
+  <div class="row">
+    <div class="col-md-4" style="padding-top:50px; "!important>
+      <p>Dr. Sachie Panawla<br> Additional Chief Innovation Officer,<br> National Innovation Agency</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +941125655656</p>
+      <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:someone@example.com">123@gmail.com</a></p>
+    </div>
+    <div class="col-md-8">
+      <p class="text-center">Describe your innovation here</p>
+      <div class="col-sm-12 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Support Type
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Business development</a></li>
+                <li><a href="#">Equipment & services</a></li>
+                <li><a href="#">Professional skills</a></li>
+                <li><a href="#">Industrial Property Support</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Legal support</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input id="phone" type="text" class="form-control" name="email" placeholder="Mobile">
+          </div>
+          <div class="col-sm-6 form-group">
+            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+            
+          </div>
+        </div>
+        <textarea class="form-control" id="description" name="description" placeholder="Briefly describe about your innovation" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <button class="btn btn-default pull-right" id="submit" type="submit">Submit</button>
+          </div>
+          <div class="col-sm-4 form-group">
+            <button class="btn btn-default" id="cancel" type="submit">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+
+</script>
+
+</body>
+</html>
